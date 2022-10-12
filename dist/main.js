@@ -69,9 +69,7 @@
         </div>
         <div part="body">
           <!-- TODO: SLIDES 61 & 63.2 -->
-          <h1>Card Heading</h1>
-          <p>Card content.</p>
-          <a href="#">Card Link</a>
+          <slot></slot>
         </div>
     `}constructor(){super(),this.clickable=!1}}window.customElements.define(ot.tag,ot);class rt extends st{static get tag(){return"u-mark"}static get styles(){return[a`
         :host {
