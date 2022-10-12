@@ -101,11 +101,11 @@ class UFooter extends LitElement {
       <!-- TODO: SLIDE 111 -->
       <ul>
         <!-- TODO: SLIDE 51 -->
-        <a href="#privacy-statement>Privacy</a>
-        <a href="#ad85>Non-discrimination</a>
-        <a href="#hr11>Equal Opportunity</a>
-        <a href="#accessibility-statement>Accessibility</a>
-        <a href="#copyright-information>Copyright</a>
+        <a href="#privacy-statement">Privacy</a>
+        <a href="#ad85">Non-discrimination</a>
+        <a href="#hr11">Equal Opportunity</a>
+        <a href="#accessibility-statement">Accessibility</a>
+        <a href="#copyright-information">Copyright</a>
       </ul>`;
   }
 
