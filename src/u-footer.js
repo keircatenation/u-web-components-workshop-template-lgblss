@@ -1,6 +1,7 @@
 /* TODO: SLIDE 42 */
 import { LitElement, css, html } from 'lit';
 /* TODO SLIDE 110.1 */
+import { UMark } from './u-mark.js';
 
 /* TODO: SLIDE 43 */
 /**
@@ -89,6 +90,7 @@ class UFooter extends LitElement {
   static get properties() {
     return {
       /* TODO: SLIDE 110.2 */
+      ...UMark.properties,
     };
   }
 
