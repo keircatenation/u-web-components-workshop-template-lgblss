@@ -61,7 +61,7 @@ class UMark extends LitElement {
         attribute: 'invert',
       },
       /**
-       * is campus location
+       * is campus location (default is 'psu')
        */
       location: {
         type: String,
@@ -132,21 +132,33 @@ class UMark extends LitElement {
               fill:#96bee6;
             }
             /* TODO: SLIDE 74 */
+            .grayscale.text,
+            .grayscale.shield-darkest {
+              fill: #231f20;
+            }
+            .grayscale.shield-shadow {
+              fill: #a7a9ac;
+            }
+            .text.invert {
+              fill: #fff;
+            }
           </style>
         </defs>
         <!-- TODO: SLIDE 73.1 -->
         <path 
-          class="shield-lightest" 
+          class="shield-lightest${this.grayscale ? ' grayscale' : ''}" 
           d="${uMarkPaths.light}"/>
         <path 
-          class="shield-darkest" 
+          class="shield-darkest${this.grayscale ? ' grayscale' : ''}" 
           d="${uMarkPaths.dark}"/>
         <path 
-          class="shield-shadow" 
+          class="shield-shadow${this.grayscale ? ' grayscale' : ''}" 
           d="${uMarkPaths.shadow}"/>
         <!-- TODO: SLIDE 73.2 -->
         <path 
-          class="text" 
+          class="text${this.grayscale ? ' grayscale' : ''}${
+      this.invert ? ' invert' : ''
+    }" 
           d="${this.svgData?.path}"/>
         </svg>
       `;
