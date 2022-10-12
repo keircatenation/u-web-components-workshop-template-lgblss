@@ -90,7 +90,7 @@
         @media (min-width: 400px) {
           width: 250px;
         }
-    `]}static get properties(){return{}}render(){return N`<a href="${this.locationData[this.location||"psu"]?.href}}">${this.svg}</a><slot hidden></slot>`}constructor(){super(),this.grayscale=!1,this.invert=!1,this.location="psu"}updated(t){super.updated&&super.updated(t),t.forEach(((t,e)=>{"location"==e&&this.requestUpdate()}))}get svgData(){return this.locationData[this.location]||this.locationData.psu}get svg(){return H`
+    `]}static get properties(){return{grayscale:{type:Boolean,attribute:"grayscale"},invert:{type:Boolean,attribute:"invert"},location:{type:String,attribute:"location"}}}render(){return N`<a href="${this.locationData[this.location||"psu"]?.href}}">${this.svg}</a><slot hidden></slot>`}constructor(){super(),this.grayscale=!1,this.invert=!1,this.location="psu"}updated(t){super.updated&&super.updated(t),t.forEach(((t,e)=>{"location"==e&&this.requestUpdate()}))}get svgData(){return this.locationData[this.location]||this.locationData.psu}get svg(){return H`
       <svg 
         id="university-mark${"psu"!==this.location?`-${this.location}`:""}"
         xmlns="http://www.w3.org/2000/svg" 
