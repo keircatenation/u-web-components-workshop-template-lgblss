@@ -346,8 +346,13 @@
             border-left: none;
           }
         }
-      `]}static get properties(){return{}}render(){return N`
+      `]}static get properties(){return{...dt.properties}}render(){return N`
       <!-- TODO: SLIDE 111 -->
+      <u-mark 
+        ?invert="${this.invert}"
+        ?grayscale="${this.grayscale}">
+      </u-mark>
+
       <ul>
         <!-- TODO: SLIDE 51 -->
         <a href="#privacy-statement">Privacy</a>
